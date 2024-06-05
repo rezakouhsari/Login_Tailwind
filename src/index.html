@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="w-full h-screen flex justify-center items-center dark:bg-[#353535] font-iran_l flex-col">
+
+  <div class="bg-white dark:bg-[#242424] border border-gray rounded-lg flex justify-center items-center flex-col py-9">
+    <img src="./img/logo.svg" width="150" height="40" class="my-4" alt="">
+    <div class="mx-6 ">
+      <h3 class="text-xl font-iran_b my-5 dark:text-white">ورود | ثبت نام</h3>
+      <p class="text-xs text-muted leading-6 dark:text-white">سلام!</p>
+      <p class="text-xs text-muted leading-6 dark:text-white">
+        لطفا شماره موبایل یا ایمل خود را وارد نمایید.</p>
+      <input type="text" class="border border-gray text-muted rounded-lg outline-none w-full px-3 
+      py-3 my-4">
+      <div class="w-full text-white flex justify-center items-center bg-red py-3 rounded-lg">ورود</div>
+      <p class="text-muted text-xs my-5 dark:text-white">
+        ورود شما به معنای پذیرش
+        <a href="" class="text-blue">شرایط دیجی کالا</a>
+        و
+        <a href="" class="text-blue">قوانین حریم خصوصی</a>
+        است.
+      </p>
+    </div>
+  </div>
+
+
+  <div id="dark" class="w-auto bg-red my-7 px-3 py-1 rounded-md cursor-pointer">تغییر</div>
+
+
+  <script>
+    let dark = document.getElementById('dark');
+    let htmls = document.querySelector('html');
+    dark.addEventListener('click', () => {
+      if(htmls.classList.contains('dark')){
+        htmls.classList.remove('dark');
+      }else{
+        htmls.classList.add('dark');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
